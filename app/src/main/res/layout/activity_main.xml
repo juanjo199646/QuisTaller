@@ -16,16 +16,194 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+
+
+
+
+
+
             
-            <!-- Construccion item-->
+            <!-- Construccion item O MARCO DE LA CAJA -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height=""></RelativeLayout>
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_radius"
+                android:padding="10dp">
+
+                <!-- INICIO DE CABEZA -->
+                <RelativeLayout
+                    android:id="@+id/r1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <!--COlocar  una imagen-->
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icons8_flying_stork_96"/>
+
+                    <!--COlocar  texto-->
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_1"/>
+
+                    <!--COlocar  texto abajo del otro Texto-->
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_2"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/tv_1"
+                        android:layout_alignLeft="@+id/tv_1"/>
+                </RelativeLayout>
+
+                <!-- INICIO DE CONTENIDO -->
+                <!-- INICIO de conetnido abajo del otro relative  -->
+                <RelativeLayout
+                    android:id="@+id/r1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/r1_1">
+
+                    <!-- imagen con medidas-->
+                    <ImageView
+                        android:id="@id/img_2"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/mario"
+                        android:background="@drawable/border"/>
+
+                    <!-- texto al lado derecho de la imagen-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_toRightOf="@id/img_2">
+
+                        <!-- configuracion del texto  al lade derecho de laimagen de la imagen-->
+                        <TextView
+                            android:id="@+id/tv_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_3"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"/>
+
+                        <!-- configuracion del texto abajo del texto anterior-->
+                        <TextView
+                            android:id="@+id/tv_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_4"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_below="@id/tv_3"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+                        <!-- configuracion de Linear layourt-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/border"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/img_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_flying_stork_96" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_5"
+                                    android:layout_toRightOf="@id/img_3"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">>
+
+                                <ImageView
+                                    android:id="@+id/img_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_flying_stork_96" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_6"
+                                    android:layout_toRightOf="@id/img_4"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/img_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icons8_flying_stork_96" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/str_7"
+                                    android:layout_toRightOf="@id/img_5"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
             
             
             
             
-            
+
+
+
             
             
             
